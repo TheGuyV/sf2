@@ -1,0 +1,37 @@
+{
+  "version": "0.2.13",
+  "url": "https://sf2.seibucup.online/",
+  "notes": "대전 시작 때 경고·타이틀 화면 없이 캐릭터 선택으로",
+  "files": [
+    {
+      "path": "SF2Online.exe",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.13/SF2Online.exe",
+      "sha256": "39fc835ed8ca69539a8368de4a3baddc618abbe5560516d431d6383ca3efce35",
+      "size": 51847333
+    },
+    {
+      "path": "netplay/sf2rb.lua",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.13/sf2rb.lua",
+      "sha256": "4b080d7dcabee74e8c47b4f31daba6a5174ee61c8b7d9ddbb3974b4401eaed06",
+      "size": 97017
+    },
+    {
+      "path": "netplay/filters.zip",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.13/filters.zip",
+      "sha256": "13d0464c09075bb6546654dc3ef55130eaa80dcc818b11d1843dbd5da679d3d4",
+      "size": 561959
+    },
+    {
+      "path": "netplay/plugins/sf2_nowarn/init.lua",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.13/init.lua",
+      "sha256": "cf0e0537a630adcafb56fede60c3efee0b50b6696cfbd0e220cf60aa091248b4",
+      "size": 1552
+    },
+    {
+      "path": "netplay/plugins/sf2_nowarn/plugin.json",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.13/plugin.json",
+      "sha256": "de264a0cdb49eb40f0dfa6d435f17a945ee117cb6ef638dee3b2bbfdf100e268",
+      "size": 181
+    }
+  ]
+}

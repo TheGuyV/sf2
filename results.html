@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>경기 기록 - 스트리트 파이터 II 온라인</title>
+<meta name="description" content="스트리트 파이터 II 온라인에서 끝까지 치른 대전의 기록과 리플레이. 런처에서 바로 다시 볼 수 있습니다.">
+<link rel="canonical" href="https://sf2.seibucup.online/results.html">
+<meta property="og:title" content="경기 기록 - 스트리트 파이터 II 온라인">
+<meta property="og:description" content="끝까지 치른 대전의 기록과 리플레이">
+<meta property="og:image" content="https://sf2.seibucup.online/img/fight.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&family=Press+Start+2P&display=swap">
+<style>
+:root {
+  --night: #0b1026; --panel: rgba(22, 18, 30, .86); --line: #3a2e44; --text: #f2ecf8; --muted: #b6aac6;
+  --red: #e2402f; --gold: #f2c84a; --green: #9be34a; --green-dk: #4f9a12; --win: #ffe08a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--night) linear-gradient(#060a1e 0, #121a44 420px, #0b1026 900px) no-repeat; color: var(--text); font: 16px/1.6 "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif; min-height: 100vh; }
+a { color: var(--green); }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: 16px; }
+.family { font-size: 13px; color: var(--muted); padding-block: 8px; border-bottom: 1px solid rgba(255,255,255,.08); background: rgba(5,7,18,.7); }
+.family .here { color: var(--text); font-weight: 700; }
+nav.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: rgba(8,11,28,.86); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(255,255,255,.07); }
+nav.top .wrap { display: flex; align-items: center; gap: 8px 18px; padding-block: 10px; flex-wrap: wrap; }
+.logo { font: 13px "Press Start 2P", monospace; color: var(--gold); text-decoration: none; white-space: nowrap; }
+.logo b { color: var(--red); }
+nav.top .links { display: flex; gap: 6px 16px; flex-wrap: wrap; font-size: 14px; margin-left: auto; }
+nav.top .links a { color: var(--muted); text-decoration: none; }
+nav.top .links a:hover, nav.top .links a:focus-visible, nav.top .links a[aria-current] { color: var(--text); }
+nav.top .links a[aria-current] { font-weight: 700; }
+
+main { padding-block: 36px 70px; }
+h1 { font: clamp(30px, 5vw, 44px)/1.15 "Black Han Sans", sans-serif; margin: 0 0 6px; text-wrap: balance; }
+h1 small { display: block; font: 11px "Press Start 2P", monospace; color: var(--red); letter-spacing: .1em; margin-bottom: 10px; }
+.lead { color: var(--muted); margin: 0 0 18px; max-width: 65ch; }
+.how { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; font-size: 15px; }
+.how b { color: var(--gold); }
+.how ol { margin: 6px 0 0; padding-left: 22px; }
+.tools { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.tools label { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 3px; }
+.tools input, .tools select { font: inherit; font-size: 15px; color: var(--text); background: #14122a; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0; }
+.tools input { width: 220px; max-width: 100%; }
+.tools input:focus-visible, .tools select:focus-visible, button:focus-visible, .list a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.count { margin-left: auto; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; align-self: end; }
+
+.list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.m { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; display: grid; grid-template-columns: 96px minmax(0, 1fr) auto; gap: 6px 14px; align-items: center; }
+.when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; line-height: 1.35; }
+.when .tag { display: inline-block; margin-top: 2px; font-size: 11px; color: var(--gold); border: 1px solid rgba(242,200,74,.5); border-radius: 4px; padding: 0 5px; }
+.vs { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: center; }
+.p { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.p.r { flex-direction: row-reverse; text-align: right; }
+.p img { width: 40px; height: 40px; border-radius: 4px; image-rendering: pixelated; flex: none; box-shadow: 0 0 0 1px var(--line); background: #1b1830; }
+.p .n { min-width: 0; }
+.p .n b { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px; }
+.p .n small { color: var(--muted); font-size: 12px; }
+.p.w .n b { color: var(--win); }
+.p.w img { box-shadow: 0 0 0 2px var(--gold); }
+.sc { font: 15px "Press Start 2P", monospace; color: var(--text); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sc i { font-style: normal; color: var(--muted); margin-inline: 4px; }
+.act { display: flex; gap: 6px; }
+.act button, .act a { font: inherit; font-size: 13px; font-weight: 700; border-radius: 8px; padding: 7px 10px; cursor: pointer; text-decoration: none; white-space: nowrap; }
+.act button { background: var(--green); color: #12200a; border: 0; box-shadow: 0 3px 0 var(--green-dk); }
+.act button:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--green-dk); }
+.act a { color: var(--text); border: 1px solid rgba(255,255,255,.28); }
+.act a:hover { border-color: var(--gold); color: var(--gold); }
+.act .none { color: var(--muted); font-size: 12px; align-self: center; }
+.more { display: block; margin: 16px auto 0; font: inherit; font-weight: 700; color: var(--text); background: transparent; border: 2px solid rgba(255,255,255,.3); border-radius: 10px; padding: 10px 22px; cursor: pointer; }
+.more:hover { border-color: var(--gold); color: var(--gold); }
+.empty { color: var(--muted); padding: 30px 0; text-align: center; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: #1a2a10; color: #dff7c2; border: 1px solid var(--green-dk); border-radius: 10px; padding: 10px 16px; font-size: 14px; max-width: calc(100% - 32px); }
+footer { border-top: 1px solid rgba(255,255,255,.08); color: var(--muted); font-size: 13px; padding-block: 22px 40px; }
+@media (max-width: 720px) {
+  .m { grid-template-columns: minmax(0, 1fr); }
+  .when { display: flex; gap: 8px; align-items: center; }
+  .when br { display: none; }
+  .act { justify-content: flex-end; }
+  .p img { width: 34px; height: 34px; }
+  .sc { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="family"><div class="wrap">패밀리 사이트 · <a href="https://seibucup.online/">세이부 컵 사커 온라인</a> · <a href="https://twc98.seibucup.online/">테크모 월드컵 98 온라인</a> · <a href="https://rg2.seibucup.online/">런앤건2 온라인</a> · <a href="https://tekkentag.seibucup.online/">철권 태그 온라인</a> · <span class="here">스트리트 파이터 II 온라인</span></div></div>
+<nav class="top" aria-label="메뉴"><div class="wrap">
+  <a class="logo" href="./">SF<b>II</b> ONLINE</a>
+  <div class="links"><a href="./#features">특징</a><a href="./#flow">대전 흐름</a><a href="./#start">시작하기</a><a href="results.html" aria-current="page">경기 기록</a><a href="./#faq">자주 묻는 질문</a><a href="./#news">업데이트</a></div>
+</div></nav>
+<main><div class="wrap">
+  <h1><small>RESULTS</small>경기 기록</h1>
+  <p class="lead">끝까지 치른 대전의 결과와 리플레이입니다. 점수는 이긴 라운드 수이고, 비밀번호 방의 경기는 올라오지 않습니다.</p>
+  <div class="how"><b>리플레이는 런처에서 볼 수 있어요.</b> 런처에서 <b>리플레이</b>를 열고 <b>온라인</b> 탭에서 경기를 고르면 바로 재생됩니다.</div>
+  <div class="tools">
+    <label for="q">닉네임 찾기<input id="q" type="search" placeholder="닉네임" autocomplete="off"></label>
+    <label for="ch">캐릭터<select id="ch"><option value="-1">모두</option></select></label>
+    <span class="count" id="count" aria-live="polite"></span>
+  </div>
+  <ol class="list" id="list"></ol>
+  <p class="empty" id="empty" hidden></p>
+  <button type="button" class="more" id="more" hidden>더 보기</button>
+</div></main>
+<footer><div class="wrap">
+  <p>닉네임 대신 다른 이름으로 바꾸거나 기록을 지우고 싶으면 런처의 [사용문의]로 알려 주세요.</p>
+  <p>비상업 팬 프로젝트입니다. 스트리트 파이터 II(Street Fighter II)는 캡콤(Capcom)의 저작물이며, 이 사이트는 캡콤과 아무 관계가 없습니다.</p>
+</div></footer>
+<script>
+const CHARS = ['류', 'E.혼다', '블랑카', '가일', '켄', '춘리', '장기에프', '달심', 'M.바이슨', '사가트', '발로그', '베가'];
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let ALL = [], shown = 40;
+CHARS.forEach((n, i) => { const o = document.createElement('option'); o.value = i; o.textContent = n; $('ch').appendChild(o); });
+function side(nick, ch, win, right) {
+  const name = CHARS[ch] || '';
+  return `<div class="p${right ? ' r' : ''}${win ? ' w' : ''}"><img src="img/c${ch >= 0 && ch < 12 ? ch : 0}.png" alt="" width="40" height="40" loading="lazy"><div class="n"><b title="${esc(nick)}">${esc(nick)}</b><small>${esc(name)}</small></div></div>`;
+}
+function render() {
+  const q = $('q').value.trim().toLowerCase(), ch = +$('ch').value;
+  const rows = ALL.filter(r => (!q || r.nicks.some(n => n.toLowerCase().includes(q))) && (ch < 0 || r.teams[0] === ch || r.teams[1] === ch));
+  $('count').textContent = rows.length === ALL.length ? ALL.length + '경기' : rows.length + ' / ' + ALL.length + '경기';
+  $('list').innerHTML = rows.slice(0, shown).map(r => {
+    const [a, b] = r.score, d = r.when.split(' ');
+    return `<li class="m"><div class="when">${esc(d[0] || '')}<br>${esc(d[1] || '')}</div>`
+      + `<div class="vs">${side(r.nicks[0], r.teams[0], a > b, false)}<div class="sc">${a}<i>:</i>${b}</div>${side(r.nicks[1], r.teams[1], b > a, true)}</div>`
+      + `<div class="act"><span class="none">${r.replay ? '런처에서 리플레이' : '리플레이 없음'}</span></div></li>`;
+  }).join('');
+  $('empty').hidden = rows.length > 0;
+  $('empty').textContent = ALL.length ? '찾는 경기가 없어요.' : '아직 올라온 경기가 없어요.';
+  $('more').hidden = rows.length <= shown;
+}
+$('q').addEventListener('input', () => { shown = 40; render(); });
+$('ch').addEventListener('change', () => { shown = 40; render(); });
+$('more').addEventListener('click', () => { shown += 40; render(); });
+fetch('results.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : []).then(list => {
+  ALL = (Array.isArray(list) ? list : []).filter(r => r && Array.isArray(r.score) && Array.isArray(r.teams) && Array.isArray(r.nicks) && typeof r.when === 'string')
+    .map(r => ({ when: r.when, score: [r.score[0] | 0, r.score[1] | 0], teams: [r.teams[0] | 0, r.teams[1] | 0], nicks: [String(r.nicks[0] || ''), String(r.nicks[1] || '')], ft: r.ft | 0,
+                 replay: typeof r.replay === 'string' && /^replays\/[^\/\\]+\.sf2r$/.test(r.replay) ? r.replay : '' }));
+  render();
+}).catch(() => { $('empty').hidden = false; $('empty').textContent = '기록을 불러오지 못했어요. 잠시 뒤 다시 열어 주세요.'; });
+</script>
+</body>
+</html>

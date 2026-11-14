@@ -115,8 +115,8 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 let ALL = [], shown = 40;
 CHARS.forEach((n, i) => { const o = document.createElement('option'); o.value = i; o.textContent = n; $('ch').appendChild(o); });
-function side(nick, ch, win, right) {
-  const name = CHARS[ch] || '';
+function side(nick, ch, win, right, team) {
+  const name = team && team.length >= 2 ? team.map(c => CHARS[c] || '?').join('·') : (CHARS[ch] || '');
   return `<div class="p${right ? ' r' : ''}${win ? ' w' : ''}"><img src="img/c${ch >= 0 && ch < 12 ? ch : 0}.png" alt="" width="40" height="40" loading="lazy"><div class="n"><b title="${esc(nick)}">${esc(nick)}</b><small>${esc(name)}</small></div></div>`;
 }
 function render() {
@@ -125,8 +125,9 @@ function render() {
   $('count').textContent = rows.length === ALL.length ? ALL.length + '경기' : rows.length + ' / ' + ALL.length + '경기';
   $('list').innerHTML = rows.slice(0, shown).map(r => {
     const [a, b] = r.score, d = r.when.split(' ');
-    return `<li class="m"><div class="when"><span>${esc(d[0] || '')}</span> <span>${esc(d[1] || '')}</span></div>`
-      + `<div class="vs">${side(r.nicks[0], r.teams[0], a > b, false)}<div class="sc">${a}<i>:</i>${b}</div>${side(r.nicks[1], r.teams[1], b > a, true)}</div>`
+    const tag = r.kind === 'team' ? '3대3 팀배틀' : r.kind === 'tag' ? '태그매치' : r.kind === 'king' ? '연승 매치' : '';
+    return `<li class="m"><div class="when"><span>${esc(d[0] || '')}</span> <span>${esc(d[1] || '')}</span>${tag ? `<br><span class="tag">${tag}</span>` : ''}</div>`
+      + `<div class="vs">${side(r.nicks[0], r.teams[0], a > b, false, r.tt[0])}<div class="sc">${a}<i>:</i>${b}</div>${side(r.nicks[1], r.teams[1], b > a, true, r.tt[1])}</div>`
       + `<div class="act"><span class="none">${r.replay ? '런처에서 리플레이' : '리플레이 없음'}</span></div></li>`;
   }).join('');
   $('empty').hidden = rows.length > 0;
@@ -139,6 +140,8 @@ $('more').addEventListener('click', () => { shown += 40; render(); });
 fetch('results.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : []).then(list => {
   ALL = (Array.isArray(list) ? list : []).filter(r => r && Array.isArray(r.score) && Array.isArray(r.teams) && Array.isArray(r.nicks) && typeof r.when === 'string')
     .map(r => ({ when: r.when, score: [r.score[0] | 0, r.score[1] | 0], teams: [r.teams[0] | 0, r.teams[1] | 0], nicks: [String(r.nicks[0] || ''), String(r.nicks[1] || '')], ft: r.ft | 0,
+                 kind: r.kind === 'team' || r.kind === 'tag' || r.kind === 'king' ? r.kind : '',
+                 tt: (typeof r.tt === 'string' ? r.tt : '').split('|').map(t => t.split(',').map(Number).filter(c => c >= 0 && c < 12)),
                  replay: typeof r.replay === 'string' && /^replays\/[^\/\\]+\.sf2r$/.test(r.replay) ? r.replay : '' }));
   render();
 }).catch(() => { $('empty').hidden = false; $('empty').textContent = '기록을 불러오지 못했어요. 잠시 뒤 다시 열어 주세요.'; });

@@ -1,35 +1,35 @@
 {
-  "version": "0.2.22",
+  "version": "0.2.23",
   "url": "https://sf2.seibucup.online/",
-  "notes": "Tag match fixes, team intro health bar",
+  "notes": "태그매치: 2P 태그 색 깨짐 수정, 타임아웃은 두 캐릭터 체력 합으로 판정, 승리 포즈 뒤 종료, 얼굴 HUD 정리, 새 오락기 화면. 보너스 게임: 시간 보너스까지 반영. 연승 오락기 → 오리지날 SF2CE",
   "files": [
     {
       "path": "SF2Online.exe",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.22/SF2Online.exe",
-      "sha256": "b925e8f9fbcd33cd698d131dc6b05567a35a7213bf815f1d53c4a6ba41ce971e",
-      "size": 51855567
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.23/SF2Online.exe",
+      "sha256": "0fbbdb77b98db2fd65f9227a78437f96b6473f4b168a9d2df48fbeb108ff4a93",
+      "size": 51855895
     },
     {
       "path": "netplay/sf2rb.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.22/sf2rb.lua",
-      "sha256": "f2beaba0ae8d39987ca9c69a5dd7e3fb2f32047fb64d6984c1e1746614ed4696",
-      "size": 263840
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.23/sf2rb.lua",
+      "sha256": "67e9a77328705d37b59c620daae02f5c0a750510ec023ce5a55c40856dca067b",
+      "size": 266390
     },
     {
       "path": "netplay/filters.zip",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.22/filters.zip",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.23/filters.zip",
       "sha256": "13d0464c09075bb6546654dc3ef55130eaa80dcc818b11d1843dbd5da679d3d4",
       "size": 561959
     },
     {
       "path": "netplay/plugins/sf2_nowarn/init.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.22/init.lua",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.23/init.lua",
       "sha256": "cf0e0537a630adcafb56fede60c3efee0b50b6696cfbd0e220cf60aa091248b4",
       "size": 1552
     },
     {
       "path": "netplay/plugins/sf2_nowarn/plugin.json",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.22/plugin.json",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.23/plugin.json",
       "sha256": "de264a0cdb49eb40f0dfa6d435f17a945ee117cb6ef638dee3b2bbfdf100e268",
       "size": 181
     }

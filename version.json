@@ -1,35 +1,35 @@
 {
-  "version": "0.2.27",
+  "version": "0.2.28",
   "url": "https://sf2.seibucup.online/",
-  "notes": "태그매치: 자리가 바뀐 뒤 태그하면 들어온 캐릭터가 뒤를 보던 문제 수정",
+  "notes": "토너먼트 오락기: 4강·8강·16강, 대진 무작위, 라운드 경기 동시 진행, 진행 중인 경기 관전",
   "files": [
     {
       "path": "SF2Online.exe",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.27/SF2Online.exe",
-      "sha256": "4d70ff66f1231afc8013ba0835ac9a386180ebf902d00b89ddd1ab0ed1d1a1bf",
-      "size": 51857496
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.28/SF2Online.exe",
+      "sha256": "93d93d415f6a68a27ae5d2829579cdfe24cce6b959208e90150f7336b8ae6596",
+      "size": 51861417
     },
     {
       "path": "netplay/sf2rb.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.27/sf2rb.lua",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.28/sf2rb.lua",
       "sha256": "e3ac6f8a82e50d863bc7ad1df2b2b523efac8a26c2082cca5d2ad83ee8eff1a3",
       "size": 268332
     },
     {
       "path": "netplay/filters.zip",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.27/filters.zip",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.28/filters.zip",
       "sha256": "13d0464c09075bb6546654dc3ef55130eaa80dcc818b11d1843dbd5da679d3d4",
       "size": 561959
     },
     {
       "path": "netplay/plugins/sf2_nowarn/init.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.27/init.lua",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.28/init.lua",
       "sha256": "cf0e0537a630adcafb56fede60c3efee0b50b6696cfbd0e220cf60aa091248b4",
       "size": 1552
     },
     {
       "path": "netplay/plugins/sf2_nowarn/plugin.json",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.27/plugin.json",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.28/plugin.json",
       "sha256": "de264a0cdb49eb40f0dfa6d435f17a945ee117cb6ef638dee3b2bbfdf100e268",
       "size": 181
     }

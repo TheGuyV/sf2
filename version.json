@@ -1,43 +1,43 @@
 {
-  "version": "0.2.30",
+  "version": "0.2.31",
   "url": "https://sf2.seibucup.online/",
-  "notes": "내 캐릭터 항상 왼쪽 (베타 옵션), 카운터 표시, 새 게임 실행 파일",
+  "notes": "내 캐릭터 항상 왼쪽: 배경 깨짐 수정(12개 스테이지 측정값), 라운드 시작부터 승리 포즈까지 유지, 태그·팀배틀 아래 줄도 내 쪽이 왼쪽",
   "files": [
     {
       "path": "SF2Online.exe",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.30/SF2Online.exe",
-      "sha256": "276f827b6f153ada9d7c391ac2f2c79d04f195cacafcdcee4bc76bc1a9929919",
-      "size": 51861765
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.31/SF2Online.exe",
+      "sha256": "3a30cf78b2e8c14f85c8b248426a1ea2fd117120a5df5642d9eb336b5216e76c",
+      "size": 51861764
     },
     {
       "path": "netplay/sf2rb.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.30/sf2rb.lua",
-      "sha256": "69bd510870508ee27733a5c176580621231434a8b27846a81ce77c557fbb7706",
-      "size": 270349
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.31/sf2rb.lua",
+      "sha256": "760b587e0e60435973147716168f984c639320b19f8235699b86520a412ce008",
+      "size": 272801
     },
     {
       "path": "netplay/filters.zip",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.30/filters.zip",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.31/filters.zip",
       "sha256": "13d0464c09075bb6546654dc3ef55130eaa80dcc818b11d1843dbd5da679d3d4",
       "size": 561959
     },
     {
       "path": "netplay/plugins/sf2_nowarn/init.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.30/init.lua",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.31/init.lua",
       "sha256": "cf0e0537a630adcafb56fede60c3efee0b50b6696cfbd0e220cf60aa091248b4",
       "size": 1552
     },
     {
       "path": "netplay/plugins/sf2_nowarn/plugin.json",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.30/plugin.json",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.31/plugin.json",
       "sha256": "de264a0cdb49eb40f0dfa6d435f17a945ee117cb6ef638dee3b2bbfdf100e268",
       "size": 181
     },
     {
       "path": "netplay/mame.exe",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.30/mame.exe",
-      "sha256": "5884fc241164bbddf6332fec62379988066b9c3b1f6272212c9ef31eb9856c75",
-      "size": 123753142
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.31/mame.exe",
+      "sha256": "9530fe67092ae03f648bce0c9f7d94444dc051adb4acbb339d628d9f0a5135eb",
+      "size": 123776704
     }
   ]
 }

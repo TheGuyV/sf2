@@ -1,4 +1,5 @@
 [
+{"when":"2026-11-22 00:04","room":7,"type":"1v1","time":99,"players":2,"score":[3,0],"teams":[6,9],"ft":2,"series":"7-261122000435-5","kind":"king","nicks":["류로켄","스파맨","",""],"replay":"replays/20261122_000435_류로켄_vs_스파맨_3-0_p1.sf2r"},
 {"when":"2026-11-22 00:02","room":6,"type":"1v1","time":99,"players":2,"score":[2,3],"teams":[9,6],"ft":2,"series":"6-261122000249-4","kind":"king","nicks":["스파맨","류로켄","",""],"replay":"replays/20261122_000249_스파맨_vs_류로켄_2-3_p1.sf2r"},
 {"when":"2026-11-21 23:59","room":5,"type":"1v1","time":99,"players":2,"score":[3,2],"teams":[1,3],"ft":2,"series":"5-261121235952-3","kind":"team","tt":"6,3,1|0,6,3","nicks":["스파맨","류로켄","",""],"replay":"replays/20261121_235952_스파맨_vs_류로켄_3-2_p1.sf2r"},
 {"when":"2026-11-21 23:56","room":4,"type":"1v1","time":99,"players":2,"score":[0,3],"teams":[0,6],"ft":2,"series":"4-261121235649-2","kind":"team","tt":"3,6,0|6,3,1","nicks":["류로켄","스파맨","",""],"replay":"replays/20261121_235649_류로켄_vs_스파맨_0-3_p1.sf2r"},

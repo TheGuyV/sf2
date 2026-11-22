@@ -1,42 +1,42 @@
 {
-  "version": "0.2.32",
+  "version": "0.2.33",
   "url": "https://sf2.seibucup.online/",
-  "notes": "기절 게이지: 체력바 아래에 기절까지 얼마나 쌓였는지 표시",
+  "notes": "기절 표시: DIZZY가 일어난 뒤에도 남던 문제를 고쳤어요. 내 캐릭터 왼쪽: 라운드 승리 후 보너스 점수 화면과 승리 글자가 바르게 나와요.",
   "files": [
     {
       "path": "SF2Online.exe",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.32/SF2Online.exe",
-      "sha256": "d2d3f00e96cb69daf7b65559d920c6617e244397e79a3e3cd5c2f91fb8ea381c",
-      "size": 51861765
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.33/SF2Online.exe",
+      "sha256": "379e7f3833f76bb1b6612aea53baa6da3b2fb6ce0439d48cee8b110950ffd511",
+      "size": 51861766
     },
     {
       "path": "netplay/sf2rb.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.32/sf2rb.lua",
-      "sha256": "d378e58849acf257e856d388d7979be54205398e7814e727226411fba43c1c15",
-      "size": 272801
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.33/sf2rb.lua",
+      "sha256": "21dfe06941a72c5df8de38054d71f994079b25ad087b643ae1f4794a73ec771b",
+      "size": 273158
     },
     {
       "path": "netplay/filters.zip",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.32/filters.zip",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.33/filters.zip",
       "sha256": "13d0464c09075bb6546654dc3ef55130eaa80dcc818b11d1843dbd5da679d3d4",
       "size": 561959
     },
     {
       "path": "netplay/plugins/sf2_nowarn/init.lua",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.32/init.lua",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.33/init.lua",
       "sha256": "cf0e0537a630adcafb56fede60c3efee0b50b6696cfbd0e220cf60aa091248b4",
       "size": 1552
     },
     {
       "path": "netplay/plugins/sf2_nowarn/plugin.json",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.32/plugin.json",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.33/plugin.json",
       "sha256": "de264a0cdb49eb40f0dfa6d435f17a945ee117cb6ef638dee3b2bbfdf100e268",
       "size": 181
     },
     {
       "path": "netplay/mame.exe",
-      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.32/mame.exe",
-      "sha256": "9530fe67092ae03f648bce0c9f7d94444dc051adb4acbb339d628d9f0a5135eb",
+      "url": "https://github.com/TheGuyV/sf2/releases/download/v0.2.33/mame.exe",
+      "sha256": "5141996e3132f41461dbd6bc13e9a27338ea39fafd623a5d9836b17f597c563b",
       "size": 123776704
     }
   ]
